@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TheoryHelper</string>
+    <string name="root_note">Root Note</string>
+    <string name="scale">Scale</string>
+    <string-array name="notes_array">
+        <item>A</item>
+        <item>A#/Bb</item>
+        <item>B</item>
+        <item>C</item>
+        <item>C#/Db</item>
+        <item>D</item>
+        <item>D#/Eb</item>
+        <item>E</item>
+        <item>F</item>
+        <item>F#/Gb</item>
+        <item>G</item>
+        <item>G#/Ab</item>
+    </string-array>
+</resources>
