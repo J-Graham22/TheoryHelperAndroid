@@ -29,9 +29,8 @@ class MainActivity : AppCompatActivity() {
         val spScaleSelectArrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, scalesLabels)
         spScaleSelect.adapter = spScaleSelectArrayAdapter
 
-
-        var selectedNote = spRootNoteSelect.selectedItem
-        var selectedScale = spScaleSelect.selectedItem
+        var selectedNote: String = spRootNoteSelect.selectedItem.toString()
+        var selectedScale: String = spScaleSelect.selectedItem.toString()
 
         spRootNoteSelect.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
@@ -41,8 +40,8 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
                 selectedNote = notesNames[position]
-                println("blah blah blah")
-                Octave.CreateScaleString()
+                val scaleString = Octave.CreateScaleString(selectedNote, selectedScale)
+                tvScaleLabel.setText(scaleString)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -58,6 +57,8 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
                 selectedScale = scalesLabels[position]
+                val scaleString = Octave.CreateScaleString(selectedNote, selectedScale)
+                tvScaleLabel.setText(scaleString)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {

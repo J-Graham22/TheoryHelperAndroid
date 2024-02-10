@@ -16,10 +16,4 @@
         <item>G</item>
         <item>G#/Ab</item>
     </string-array>
-    <string-array name="scale_array">
-        <item>Major</item>
-        <item>Minor</item>
-        <item>Harmonic Minor</item>
-        <item>Natural Minor</item>
-    </string-array>
 </resources>
