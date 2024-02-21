@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         spRootNoteSelect = findViewById(R.id.spRootNoteSelect)
         spScaleSelect = findViewById(R.id.spScaleSelect)
-        tvScaleLabel = findViewById(R.id.tvScaleLabel)
+        tvScaleLabel = findViewById(R.id.tvScaleOutput)
 
         val notesNames: Array<String> = resources.getStringArray(R.array.notes_array)
         val spRootNoteSelectArrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, notesNames)

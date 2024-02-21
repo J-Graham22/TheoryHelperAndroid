@@ -83,7 +83,7 @@ class Octave {
                     currentNote = currentNote.nextNote
                 }
 
-                scaleStringBuilder.append(" - ${currentNote.noteName}")
+                scaleStringBuilder.append("\n${currentNote.noteName}")
             }
 
             return scaleStringBuilder.toString()
